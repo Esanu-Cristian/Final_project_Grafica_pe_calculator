@@ -1,0 +1,51 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>45763f86-0822-4c6e-b834-e12efff60196</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Final_Project.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Final_Project</Name>
+    <RootNamespace>Final_Project</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Final_Project.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tree\" />
+    <Folder Include="tree\tree1_3ds\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bonus.jpg" />
+    <Content Include="ceiling.jpg" />
+    <Content Include="chaser.jpg" />
+    <Content Include="floor.jpg" />
+    <Content Include="gate.jpg" />
+    <Content Include="tree\tree1_3ds\bark_loo.jpg" />
+    <Content Include="tree\tree1_3ds\blatt1.jpg" />
+    <Content Include="tree\tree1_3ds\blatt1_a.jpg" />
+    <Content Include="tree\tree1_3ds\Tree1.3ds" />
+    <Content Include="wall.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
